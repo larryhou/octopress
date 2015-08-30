@@ -64,6 +64,10 @@ body header[role=banner]
     transition: color 0.5s !important
 }
 
+article blockquote {
+	font-size: 1em !important;
+}
+
 figure.code figcaption {
 	background:none !important;
 	border: 1px solid #e0e0e0 !important;
