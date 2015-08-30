@@ -63,3 +63,42 @@ body header[role=banner]
     -webkit-transition: background-color 0.5s;
     transition: color 0.5s !important
 }
+
+figure.code figcaption {
+	background:none !important;
+	border: 1px solid #e0e0e0 !important;
+	font-size: 20px !important;
+	line-height: 2.5em !important;
+	font-family: Palatino !important;
+	text-shadow: none !important;
+}
+
+.highlight 
+{
+	background: #eee url('/images/noise.png?1440902514') top left !important;
+	border: 1.5px solid #e6e6e6 !important;
+	table, code {
+		background: #fff url('/images/noise.png?1440902514') top left !important;
+	}
+	
+	*::selection {
+		background: #cceeff url('/images/noise.png?1440902514') top left !important;
+		text-shadow: none !important;
+	}
+	
+	.line-numbers {
+		background: #fff url('/images/noise.png?1440902514') top left !important;
+		border-right: 1px solid #e0e0e0 !important;
+		span { 
+			color: #859900 !important; 
+		}
+		text-shadow: none !important;
+		font-size: 15px;
+	}
+	
+	pre {
+		font-size: 15px;
+	}
+	
+
+}
