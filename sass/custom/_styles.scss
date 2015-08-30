@@ -1,2 +1,65 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+html 
+{
+    background: url('/images/line-tile.png?1440902514') top left !important;
+}
+
+body {
+	border:1px solid #eee;
+	nav {
+		background: url('/images/noise.png?1440902514') !important;
+		margin-top:-45px !important;
+		border:0px !important;
+		
+		ul { 
+			float:right !important;
+		}
+		
+		li+li{
+			border-left:0px;
+			a {
+				border-left:0px;
+			}
+		}
+		
+		li a:hover {
+			color:#0181eb !important;
+		}
+	}
+}
+
+body header[role=banner]
+{
+	background: #fff url('/images/pattern.png?1440902514') top left !important;
+	h1 a { color:red !important; }
+	h2 { color:black !important; }
+}
+
+#content div.pagination span 
+{
+	color:#aaa;
+}
+
+#content div.pagination span:after,#content div.pagination span:before
+{
+	content:'\2014';
+}
+
+#content .blog-index a[rel=full-article]:hover
+{
+	color:#0181eb;
+};
+#content .blog-index a[rel=full-article] 
+{
+    background: none !important;
+    display: inline-block;
+    padding: .4em .8em;
+    margin-right: .5em;
+    text-decoration: none;
+    color: #666;
+    -moz-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    transition: color 0.5s !important
+}
