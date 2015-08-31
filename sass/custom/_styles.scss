@@ -126,6 +126,13 @@ figure.code figcaption {
 	text-shadow: none !important;
 }
 
+pre {
+	background: #f2f2f2 url('/images/noise.png?1440902514') top left !important;
+	border: 1px solid #cfcfcf !important;
+	color: #cb4b16 !important;
+	font-size: 15px !important;
+}
+
 .highlight 
 {
 	background: #eee url('/images/noise.png?1440902514') top left !important;
@@ -135,7 +142,7 @@ figure.code figcaption {
 	}
 	
 	*::selection {
-		background: #cceeff url('/images/noise.png?1440902514') top left !important;
+		background: #b0d5fa url('/images/noise.png?1440902514') top left !important;
 		text-shadow: none !important;
 	}
 	
