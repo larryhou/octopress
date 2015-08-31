@@ -13,11 +13,11 @@ sidebar: collapse
   {% endfor %}
   <div class="pagination">
     {% if paginator.previous_page %}
-    <a class="prev" href="{{paginator.previous_page_path}}">前一页#{{ paginator.page | minus:1 }}</a>
+    <a class="prev" href="{{paginator.previous_page_path}}">PREV #{{ paginator.page | minus:1 }}</a>
     {% endif %}
-	<span> 第 {{ paginator.page }} / {{ paginator.total_pages }} 页 </span>
+	<span> {{ paginator.page }} / {{ paginator.total_pages }} </span>
     {% if paginator.next_page %}
-      <a class="next" href="{{paginator.next_page_path}}">下一页#{{ paginator.page | plus:1 }}</a>
+      <a class="next" href="{{paginator.next_page_path}}">NEXT #{{ paginator.page | plus:1 }}</a>
     {% endif %}
   </div>
   <!-- <div class="pagination">
