@@ -36,3 +36,6 @@ end
 ```
 
 {% gist 4321346 %}
+
+{% gist 1059334 svg_bullets.rb %}
+{% gist 1059334 usage.scss %}
