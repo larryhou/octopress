@@ -1,5 +1,6 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+
 html 
 {
     background: url('/images/line-tile.png?1440902514') top left !important;
@@ -122,8 +123,11 @@ figure.code figcaption {
 	border: 1px solid #e0e0e0 !important;
 	font-size: 20px !important;
 	line-height: 2.5em !important;
-	font-family: Palatino !important;
+	font-family: Palatino, "Helvetica Neue", Arial, "Lucida Grande", "Lucida Sans Unicode", Lucida, sans-serif !important;
 	text-shadow: none !important;
+	a {
+		text-shadow: none !important;
+	}
 }
 
 pre {
@@ -189,19 +193,22 @@ html .gist {
 			font-size: 14px !important;
 			height: 20px;
 			
+			a[href*='/raw/'] {
+				line-height: 50px;
+				text-shadow: none !important;
+				font-family: Palatino, "Helvetica Neue", Arial, "Lucida Grande", "Lucida Sans Unicode", Lucida, sans-serif;
+				font-size: 15px;
+				font-weight:normal;
+				width:100px;
+			}
+			
 			a[href*='#file'] {
 				background:none !important;
 				border:none !important;
 				font-size: 20px;
 				line-height: 50px;
 				text-shadow: none !important;
-				font-family: Palatino, "Helvetica Neue", Arial, "Lucida Grande", "Lucida Sans Unicode", Lucida, sans-serif;
-			}
-			
-			a[href*=raw] {
-				line-height: 50px;
-				text-shadow: none !important;
-				width:50px;
+				font-family: Palatino, "Helvetica Neue", Arial, "Lucida Grande", "Lucida Sans Unicode", Lucida, sans-serif;	
 			}
 		}
 	}
