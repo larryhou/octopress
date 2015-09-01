@@ -127,9 +127,10 @@ figure.code figcaption {
 }
 
 pre {
-	background: #f2f2f2 url('/images/noise.png?1440902514') top left !important;
-	color: #cb4b16 !important;
+	background: #fff url('/images/noise.png?1440902514') top left !important;
+	border: 1.5px solid #e6e6e6;
 	font-size: 15px !important;
+	color: #cb4b16 !important;
 }
 
 .highlight 
