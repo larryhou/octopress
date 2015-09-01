@@ -137,6 +137,7 @@ pre {
 {
 	background: #eee url('/images/noise.png?1440902514') top left !important;
 	border: 1.5px solid #e6e6e6 !important;
+	border-top: none !important;
 	table, code {
 		background: #fff url('/images/noise.png?1440902514') top left !important;
 	}
@@ -158,6 +159,50 @@ pre {
 	
 	pre {
 		font-size: 15px;
+	}
+}
+
+html .gist {
+	border: 1px solid #e6e6e6 !important;
+	
+	.blob-num {
+		font-size: 15px !important;
+	}
+	.blob-code-inner {
+		font-size: 15px !important;
+	}
+	.highlight {
+		background: #fff url("/images/noise.png?1440902514") top left !important;
+		border: 0px solid #e6e6e6 !important;
+	}
+	
+	.gist-file {
+		padding-top:50px !important;
+		margin-bottom: 0px;
+		.gist-data {
+			border-top: 1px solid #ddd;
+		}
+		.gist-meta {
+			background: #fff url('/images/noise.png?1440902514') top left !important;
+			border: none !important;
+			font-size: 14px !important;
+			height: 20px;
+			
+			a[href*='#file'] {
+				background:none !important;
+				border:none !important;
+				font-size: 20px;
+				line-height: 50px;
+				text-shadow: none !important;
+				font-family: Palatino, "Helvetica Neue", Arial, "Lucida Grande", "Lucida Sans Unicode", Lucida, sans-serif;
+			}
+			
+			a[href*=raw] {
+				line-height: 50px;
+				text-shadow: none !important;
+				width:50px;
+			}
+		}
 	}
 }
 
