@@ -143,13 +143,17 @@ pre {
 }
 
 pre, .highlight, .gist-highlight 
-{
+{	
 	&::-webkit-scrollbar {  
 		height: .5em;
 		background: $blog-scroll-bg !important; 
 	}
 	
 	&::-webkit-scrollbar-thumb:horizontal { 
+		background: rgba(#999, 0.1) !important;
+	}
+	
+	&:hover::-webkit-scrollbar-thumb:horizontal {
 		background: $blog-scroll-thumb !important;
 	}
 }
