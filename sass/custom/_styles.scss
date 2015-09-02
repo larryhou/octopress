@@ -186,6 +186,8 @@ pre, .highlight, .gist-highlight
 html .gist {
 	border: 1px solid #e6e6e6 !important;
 	border-bottom:none !important;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 	
 	.blob-num {
 		font-size: $blog-code-font-size !important;
