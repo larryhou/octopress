@@ -144,11 +144,14 @@ pre {
 
 pre, .highlight, .gist-highlight 
 {
-  &::-webkit-scrollbar {  height: .5em; background: $blog-scroll-bg; }
-  &::-webkit-scrollbar-thumb:horizontal { 
-	  background: $blog-scroll-thumb !important;  
-	  -webkit-border-radius: 4px; border-radius: 4px 
-  }
+	&::-webkit-scrollbar {  
+		height: .5em;
+		background: $blog-scroll-bg !important; 
+	}
+	
+	&::-webkit-scrollbar-thumb:horizontal { 
+		background: $blog-scroll-thumb !important;
+	}
 }
 
 .highlight 
