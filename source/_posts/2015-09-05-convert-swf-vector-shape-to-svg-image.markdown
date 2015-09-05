@@ -9,7 +9,14 @@ categories:
 <a href="/assets/swf-svg/graph-01.svg" target="_blank"><img src="/assets/swf-svg/graph-01.svg"></img></a>
 <!-- more -->
 <a href="/assets/swf-svg/graph-02.svg" target="_blank"><img src="/assets/swf-svg/graph-02.svg"></img></a>
-
+<div class="blog-link">
+	<a href="/assets/swf-svg/graph-03.svg" target="_blank" style="margin-right:20px">graph-03.svg</a>
+	<a href="/assets/swf-svg/graph-04.svg" target="_blank" style="margin-right:20px">graph-04.svg</a>
+	<a href="/assets/swf-svg/graph-05.svg" target="_blank" style="margin-right:20px">graph-05.svg</a>
+	<a href="/assets/swf-svg/graph-06.svg" target="_blank" style="margin-right:20px">graph-06.svg</a>
+	<a href="/assets/swf-svg/graph-07.svg" target="_blank" style="margin-right:20px">graph-07.svg</a>
+	<a href="/assets/swf-svg/graph-08.svg" target="_blank">graph-08.svg</a>
+</div>
 ``` html Display SVG in HTML: #1
 <img src="/assets/swf-svg/graph-01.svg"></img>
 ```
