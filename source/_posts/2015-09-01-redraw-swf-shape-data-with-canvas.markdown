@@ -5,9 +5,10 @@ date: 2015-09-01 21:19:39 +0800
 comments: true
 categories: 
 ---
-
-####<div><a href='/assets/redraw-shape/' target='_blank'>Redraw demo with animation</a></div>
-####<div><a href='/assets/redraw-shape/demo.html' target='_blank'>Redraw demo</a></div>
+<div class="blog-link">
+	<div><a href='/assets/redraw-shape/' target='_blank'>Redraw demo with animation</a></div>
+	<div><a href='/assets/redraw-shape/demo.html' target='_blank'>Redraw demo</a></div>
+</div>
 
 
 <!-- more -->
