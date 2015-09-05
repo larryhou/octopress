@@ -4,7 +4,6 @@
 $blog-scroll-bg: rgba(#fff, 0.15);
 $blog-scroll-thumb: rgba(#000, 0.2);
 $blog-default-font: 'PT Sans', 'Helvetica Neue', Arial, sans-serif;
-$blog-link-font: $blog-default-font;
 $blog-code-font-size: 15px;
 
 html 
@@ -79,7 +78,7 @@ body > footer
 }
 
 .pagination {
-	font-family: $blog-link-font;
+	font-family: $blog-default-font;
 }
 
 #blog-archives 
@@ -137,7 +136,7 @@ figure.code figcaption {
 	text-shadow: none !important;
 	a {
 		text-shadow: none !important;
-		font-family: $blog-link-font;
+		font-family: $blog-default-font;
 	}
 }
 
@@ -225,7 +224,7 @@ html .gist {
 			a[href*='/raw/'] {
 				line-height: 50px;
 				text-shadow: none !important;
-				font-family: $blog-link-font;
+				font-family: $blog-default-font;
 				font-size: 15px;
 				font-weight:normal;
 				width:100px;
