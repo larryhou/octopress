@@ -227,7 +227,7 @@ html .gist {
 				font-family: $blog-default-font;
 				font-size: 15px;
 				font-weight:normal;
-				width:100px;
+				width:80px;
 			}
 			
 			a[href*='#file'] {
@@ -236,7 +236,8 @@ html .gist {
 				font-size: 20px;
 				line-height: 50px;
 				text-shadow: none !important;
-				font-family: $blog-default-font;	
+				font-family: $blog-default-font;
+				width: 85%;	
 			}
 		}
 	}
