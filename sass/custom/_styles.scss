@@ -3,8 +3,8 @@
 
 $blog-scroll-bg: rgba(#fff, 0.15);
 $blog-scroll-thumb: rgba(#000, 0.2);
-$blog-default-font: Palatino, "Helvetica Neue", Arial, "Lucida Grande", "Lucida Sans Unicode", Lucida, sans-serif;
-$blog-code-link-font: Menlo, Consolas, "Lucida Sans Unicode", Lucida, sans-serif;
+$blog-default-font: 'PT Sans', 'Helvetica Neue', Arial, sans-serif;
+$blog-link-font: $blog-default-font;
 $blog-code-font-size: 15px;
 
 html 
@@ -78,6 +78,10 @@ body > footer
     z-index: 1
 }
 
+.pagination {
+	font-family: $blog-link-font;
+}
+
 #blog-archives 
 {
 	article h1 {
@@ -133,7 +137,7 @@ figure.code figcaption {
 	text-shadow: none !important;
 	a {
 		text-shadow: none !important;
-		font-family: $blog-code-link-font;
+		font-family: $blog-link-font;
 	}
 }
 
@@ -221,7 +225,7 @@ html .gist {
 			a[href*='/raw/'] {
 				line-height: 50px;
 				text-shadow: none !important;
-				font-family: $blog-code-link-font;
+				font-family: $blog-link-font;
 				font-size: 15px;
 				font-weight:normal;
 				width:100px;
