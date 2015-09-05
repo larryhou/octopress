@@ -16,12 +16,12 @@ categories:
 
 ``` html Display SVG in HTML: #2
 <embed src="/assets/swf-svg/graph-01.svg" width="300" height="100" type="image/svg+xml"
-	pluginspage="http://www.adobe.com/svg/viewer/install/" />
+    pluginspage="http://www.adobe.com/svg/viewer/install/" />
 ```
 
 ``` html Display SVG in HTML: #3
 <object data="/assets/swf-svg/graph-01.svg" width="300" height="100" type="image/svg+xml"
-	codebase="http://www.adobe.com/svg/viewer/install/" />
+    codebase="http://www.adobe.com/svg/viewer/install/" />
 ```
 
 ``` html Display SVG in HTML: #4
@@ -30,15 +30,15 @@ categories:
 
 ``` html Not Yet Today
 <html xmlns:svg="http://www.w3.org/2000/svg">
-	<body>
+    <body>
 
-	<p>This is an HTML paragraph</p>
+    <p>This is an HTML paragraph</p>
 
-	<svg:svg width="300" height="100" version="1.1" >
-	<svg:circle cx="100" cy="50" r="40" stroke="black" stroke-width="2" fill="red" />
-	</svg:svg>
+    <svg:svg width="300" height="100" version="1.1" >
+    <svg:circle cx="100" cy="50" r="40" stroke="black" stroke-width="2" fill="red" />
+    </svg:svg>
 
-	</body>
+    </body>
 </html>
 ```
 
