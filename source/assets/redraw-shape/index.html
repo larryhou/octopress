@@ -13,8 +13,7 @@
 			var width = document.body.clientWidth
 			canvas.height = height * 4
 			canvas.width = width * 4
-			$("#shapeCanvas").css("width", width + "px")
-			$("#shapeCanvas").css("height", height + "px")
+			$("#shapeCanvas").css("width", width + "px").css("height", height + "px")
 			
 			var context = canvas.getContext('2d')
 			$.getJSON("./graph.json", function(steps)
@@ -30,6 +29,16 @@
 					else
 					{
 						clearInterval(timer)
+						$("#shapeCanvas").click(function()
+						{
+							var win = window.open()
+							$(win.document.body).css("font-family", "Menlo,Consolas")
+												.css("font-size"  , "16px")
+												.css("line-height", "25px")
+												.css("margin-left", "20px")
+							var html = $("<div/>").html(shape.commands.join("<br>")).html()
+							$(win.document.body).html(html)
+						})
 					}
 				}, 1000/25)
 			})
