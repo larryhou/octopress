@@ -2,6 +2,7 @@
 	<title>复原SWF矢量图</title>
 	<head>
 		<meta charset="UTF-8">
+		<script type="text/javascript" src="./jquery-1.11.3.js"></script>
 	</head>
 	<body>
 		<canvas id="shapeCanvas" width="1024" height="768">
@@ -10,8 +11,12 @@
 
 		<script type="text/javascript">
 			var c = document.getElementById("shapeCanvas");
-			c.height = document.body.clientHeight
-			c.width = document.body.clientWidth
+			var height = document.body.clientHeight
+			var width = document.body.clientWidth
+			c.height = height * 4
+			c.width = width * 4
+			$("#shapeCanvas").css("width", width + "px")
+			$("#shapeCanvas").css("height", height + "px")
 			
 			var context=c.getContext("2d")
 			console.log(context)

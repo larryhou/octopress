@@ -9,8 +9,12 @@
 		<canvas id="shapeCanvas"></canvas>
 		<script type="text/javascript">
 			var canvas = document.getElementById('shapeCanvas')
-			canvas.height = document.body.clientHeight
-			canvas.width = document.body.clientWidth
+			var height = document.body.clientHeight
+			var width = document.body.clientWidth
+			canvas.height = height * 4
+			canvas.width = width * 4
+			$("#shapeCanvas").css("width", width + "px")
+			$("#shapeCanvas").css("height", height + "px")
 			
 			var context = canvas.getContext('2d')
 			$.getJSON("./graph.json", function(steps)
