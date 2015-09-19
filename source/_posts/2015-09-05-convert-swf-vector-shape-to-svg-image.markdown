@@ -40,10 +40,10 @@ categories:
 ``` html Display SVG in HTML: #5
 <html>
     <body>
-    <svg width="300" height="100" version="1.1" >
-	    <circle cx="100" cy="50" r="40" stroke="black" stroke-width="2" fill="red" />
-		Sorry, your browser does not support inline SVG.
-    </svg>
+        <svg width="300" height="100" version="1.1" >
+            <circle cx="100" cy="50" r="40" stroke="black" stroke-width="2" fill="red" />
+            Sorry, your browser does not support inline SVG.
+        </svg>
     </body>
 </html>
 ```
