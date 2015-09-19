@@ -37,16 +37,13 @@ categories:
 <iframe src="/assets/swf-svg/graph-01.svg" width="300" height="100"></iframe>
 ```
 
-``` html Not Yet Today
-<html xmlns:svg="http://www.w3.org/2000/svg">
+``` html Display SVG in HTML: #5
+<html>
     <body>
-
-    <p>This is an HTML paragraph</p>
-
-    <svg:svg width="300" height="100" version="1.1" >
-    <svg:circle cx="100" cy="50" r="40" stroke="black" stroke-width="2" fill="red" />
-    </svg:svg>
-
+    <svg width="300" height="100" version="1.1" >
+	    <circle cx="100" cy="50" r="40" stroke="black" stroke-width="2" fill="red" />
+		Sorry, your browser does not support inline SVG.
+    </svg>
     </body>
 </html>
 ```
