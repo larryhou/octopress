@@ -49,7 +49,7 @@ body {
 			color:#000 !important; 
 			font-size: 2.0em !important;
 		}
-		h2 { color:black !important; }
+		h2 { color:#AAA !important; }
 	}
 }
 
@@ -77,6 +77,10 @@ body > footer
     z-index: 1
 }
 
+body>div {
+	border-bottom: 1px solid #dddddd;
+}
+
 .pagination {
 	font-family: $blog-default-font;
 }
@@ -93,6 +97,8 @@ body > footer
 
 #content 
 {
+	border-style: none !important;
+	
 	h1.entry-title {
 		font-size: 1.6em !important;
 		font-weight: normal !important;
