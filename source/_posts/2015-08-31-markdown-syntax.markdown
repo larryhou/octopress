@@ -3,7 +3,7 @@ layout: post
 title: "Markdown Syntax"
 date: 2015-08-31 16:36:40 +0800
 comments: true
-categories: 
+categories: markdown
 ---
 
 Markdown 文件
