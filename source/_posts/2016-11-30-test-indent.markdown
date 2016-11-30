@@ -7,7 +7,7 @@ categories: markdown
 ---
 行首添加TAB符号，如下脚本
 {% codeblock lang:sh %}
-   #!/bin/bash
+  #!/bin/bash
 	sudo sysctl net.inet.ip.forwarding=1
 	sudo sysctl net.inet.ip.redirect=1
 	sudo sysctl net.inet6.ip6.forwarding=1
