@@ -23,7 +23,7 @@ echo 'this seems like a pretty nice example' | awk -F' ' '{print $1}'
 {% codeblock lang:bash %}
 echo 'this seems like a pretty nice example' | awk -F' like ' '{print $1}'
 {% endcodeblock %}
-
+<!--more-->
 除了`NF`，`awk`还有一些其他内置变量，见下表
 
 |内置变量|变量描述|
