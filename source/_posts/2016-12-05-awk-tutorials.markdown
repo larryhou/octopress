@@ -167,7 +167,7 @@ exit [ expression ]     # exit immediately; status is expression
 |srand|设置随机种子并返回之前的随机种子|
 |int|截尾转换成整数|
 |substr(s,m,n)|返回字符串s自m位置(索引从1开始)开始的n个字符|
-|index(s,t)|如果字符串s中包含t则返回1，否则返回0|
+|index(s,t)|如果字符串s中包含t，则返回t在字符串中出现的位置(从1开始)，否则返回0|
 |match(s,r)|返回字符串s匹配正则表达式r的位置(从1开始)|
 |split(s,a,fs)|把字符串s通过正则fs分隔成数组a，并返回数组a长度n，如果fs未设置，则使用FS分隔符|
 |sub(r,t,s)|在字符串s中，使用正则表达式r首次匹配的位置替换成t，如果s未设置，则使用$0|
