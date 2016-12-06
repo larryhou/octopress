@@ -57,32 +57,32 @@ awk 'BEGIN{for(i=0;i<ARGC;i++)print i,ARGV[i]}' *.cs
 </pre>
 
 {% codeblock lang:bash %}
-awk 'BEGIN{for(i in ENVIRON)print i,ARGV[i]}' *.cs
+awk 'BEGIN{for(i in ENVIRON)print i " = " ENVIRON[i]}' *.cs
 {% endcodeblock %}
 <pre>
-DISPLAY /private/tmp/com.apple.launchd.eKuWVlBt3M/org.macosforge.xquartz:0
-Apple_PubSub_Socket_Render /private/tmp/com.apple.launchd.grOg8OMLVo/Render
-OLDPWD /Users/larryhou/Documents/next/trunk
-LOGNAME larryhou
-XPC_SERVICE_NAME 0
-JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home
-USER larryhou
-PATH /usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Applications/Server.app/Contents/ServerRoot/usr/bin:/Applications/Server.app/Contents/ServerRoot/usr/sbin:/Applications/Wireshark.app/Contents/MacOS
-__CF_USER_TEXT_ENCODING 0x1F5:0x0:0x0
-TERM_SESSION_ID A39F566B-15B3-4423-9716-491208377960
-TERM_PROGRAM_VERSION 388
-TERM xterm-256color
-SHLVL 1
-TMPDIR /var/folders/gb/2wdjrlq53fbdf0xbs145cv2m0000gn/T/
-SECURITYSESSIONID 186a6
-HOME /Users/larryhou
-SHELL /bin/bash
-TERM_PROGRAM Apple_Terminal
-LC_CTYPE UTF-8
-_ /usr/bin/awk
-PWD /Users/larryhou/Documents/next/trunk/TheNextMOBA/Assets/Scripts/Service/Network
-SSH_AUTH_SOCK /private/tmp/com.apple.launchd.eDbmxn43sK/Listeners
-XPC_FLAGS 0x0
+DISPLAY = /private/tmp/com.apple.launchd.eKuWVlBt3M/org.macosforge.xquartz:0
+Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.grOg8OMLVo/Render
+OLDPWD = /Users/larryhou/Documents/next/trunk
+LOGNAME = larryhou
+XPC_SERVICE_NAME = 0
+JAVA_HOME = /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home
+USER = larryhou
+PATH = /usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Applications/Server.app/Contents/ServerRoot/usr/bin:/Applications/Server.app/Contents/ServerRoot/usr/sbin:/Applications/Wireshark.app/Contents/MacOS
+__CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
+TERM_SESSION_ID = A39F566B-15B3-4423-9716-491208377960
+TERM_PROGRAM_VERSION = 388
+TERM = xterm-256color
+SHLVL = 1
+TMPDIR = /var/folders/gb/2wdjrlq53fbdf0xbs145cv2m0000gn/T/
+SECURITYSESSIONID = 186a6
+HOME = /Users/larryhou
+SHELL = /bin/bash
+TERM_PROGRAM = Apple_Terminal
+LC_CTYPE = UTF-8
+_ = /usr/bin/awk
+PWD = /Users/larryhou/Documents/next/trunk/TheNextMOBA/Assets/Scripts/Service/Network
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.eDbmxn43sK/Listeners
+XPC_FLAGS = 0x0
 </pre>
 
 {% codeblock lang:bash %}
