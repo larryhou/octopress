@@ -85,21 +85,21 @@ XPC_FLAGS 0x0
 </pre>
 
 {% codeblock lang:bash %}
-awk '{print FILENAME,$0}' Server.cs.meta 
+awk '{print FILENAME ":" sprintf("%02d",NR),$0}' Server.cs.meta  
 {% endcodeblock %}
 <pre>
-Server.cs.meta fileFormatVersion: 2
-Server.cs.meta guid: c265c6b6a7a784f3bb1417ce67e9df3e
-Server.cs.meta timeCreated: 1456236560
-Server.cs.meta licenseType: Free
-Server.cs.meta MonoImporter:
-Server.cs.meta   serializedVersion: 2
-Server.cs.meta   defaultReferences: []
-Server.cs.meta   executionOrder: 0
-Server.cs.meta   icon: {instanceID: 0}
-Server.cs.meta   userData: 
-Server.cs.meta   assetBundleName: 
-Server.cs.meta   assetBundleVariant: 
+Server.cs.meta:01 fileFormatVersion: 2
+Server.cs.meta:02 guid: c265c6b6a7a784f3bb1417ce67e9df3e
+Server.cs.meta:03 timeCreated: 1456236560
+Server.cs.meta:04 licenseType: Free
+Server.cs.meta:05 MonoImporter:
+Server.cs.meta:06   serializedVersion: 2
+Server.cs.meta:07   defaultReferences: []
+Server.cs.meta:08   executionOrder: 0
+Server.cs.meta:09   icon: {instanceID: 0}
+Server.cs.meta:10   userData: 
+Server.cs.meta:11   assetBundleName: 
+Server.cs.meta:12   assetBundleVariant: 
 </pre>
 
 ###正则表达式
