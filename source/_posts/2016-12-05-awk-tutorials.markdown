@@ -46,13 +46,14 @@ echo 'this seems like a pretty nice example' | awk -F' like ' '{print $1}'
 `&#034;`=&#034;
 
 {% codeblock lang:bash %}
-awk 'BEGIN{for(i=0;i<ARGC-1;i++)print i,ARGV[i]}' *.cs
+awk 'BEGIN{for(i=0;i<ARGC;i++)print i,ARGV[i]}' *.cs
 {% endcodeblock %}
 <pre>
 0 awk
 1 ArenaServer.cs
 2 LogicServer.cs
 3 Server.cs
+4 Utils.cs
 </pre>
 
 {% codeblock lang:bash %}
