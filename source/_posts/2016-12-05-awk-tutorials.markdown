@@ -28,20 +28,79 @@ echo 'this seems like a pretty nice example' | awk -F' like ' '{print $1}'
 
 |内置变量|变量描述|
 |:------|:------------:|
-|CONVFMT|conversion format used when converting numbers (default %.6g)|
-|FS     |regular expression used to separate  fields;  also  settable  by option -Ffs.|
-|NF     |number of fields in the current record|
-|NR     |ordinal number of the current record|
-|FNR    |ordinal number of the current record in the current file|
-|FILENAME |the name of the current input file|
-|RS     |input record separator (default newline)|
-|OFS    |output field separator (default blank)|
-|ORS    |output record separator (default newline)|
-|OFMT   |output format for numbers (default %.6g)|
-|SUBSEP |separates multiple subscripts (default 034)|
-|ARGC   |argument count, assignable|
-|ARGV   |argument array, assignable; non-null members are taken as file-names|
-|ENVIRON |array of environment variables; subscripts are names.|
+|CONVFMT|转换数字使用的格式，默认为：%.6g|
+|FS     |分列使用的正则表达式，可以通过-Ffs来设置|
+|NF     |当前行分隔后的列数|
+|NR     |当前行的序号|
+|FNR    |当前文件中当前行的序号|
+|FILENAME |当前输入文件名|
+|RS     |行分隔符，默认为换行符\\n|
+|OFS    |输出列间隔符，默认为空格|
+|ORS    |输出行分隔符，默认为换行符\\n|
+|OFMT   |数字的输出格式，默认为：%.6g|
+|SUBSEP |下标分隔符，默认为：\\034(双引号)，比如foo["A","B"]，实际通过foo["A\034B"]来访问|
+|ARGC   |awk参数数量，可赋值|
+|ARGV   |awk参数列表，可赋值，0..ARGC-1，非0索引表示输入文件名|
+|ENVIRON |环境变量列表，通过下标变量名(ENVIRON[变量名])来访问，环境变量var=value，通过ENVIRON[var]=value方式存储|
+
+`&#034;`=&#034;
+
+{% codeblock lang:bash %}
+awk 'BEGIN{for(i=0;i<ARGC-1;i++)print i,ARGV[i]}' *.cs
+{% endcodeblock %}
+<pre>
+0 awk
+1 ArenaServer.cs
+2 LogicServer.cs
+3 Server.cs
+</pre>
+
+{% codeblock lang:bash %}
+awk 'BEGIN{for(i in ENVIRON)print i,ARGV[i]}' *.cs
+{% endcodeblock %}
+<pre>
+DISPLAY /private/tmp/com.apple.launchd.eKuWVlBt3M/org.macosforge.xquartz:0
+Apple_PubSub_Socket_Render /private/tmp/com.apple.launchd.grOg8OMLVo/Render
+OLDPWD /Users/larryhou/Documents/next/trunk
+LOGNAME larryhou
+XPC_SERVICE_NAME 0
+JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home
+USER larryhou
+PATH /usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Applications/Server.app/Contents/ServerRoot/usr/bin:/Applications/Server.app/Contents/ServerRoot/usr/sbin:/Applications/Wireshark.app/Contents/MacOS
+__CF_USER_TEXT_ENCODING 0x1F5:0x0:0x0
+TERM_SESSION_ID A39F566B-15B3-4423-9716-491208377960
+TERM_PROGRAM_VERSION 388
+TERM xterm-256color
+SHLVL 1
+TMPDIR /var/folders/gb/2wdjrlq53fbdf0xbs145cv2m0000gn/T/
+SECURITYSESSIONID 186a6
+HOME /Users/larryhou
+SHELL /bin/bash
+TERM_PROGRAM Apple_Terminal
+LC_CTYPE UTF-8
+_ /usr/bin/awk
+PWD /Users/larryhou/Documents/next/trunk/TheNextMOBA/Assets/Scripts/Service/Network
+SSH_AUTH_SOCK /private/tmp/com.apple.launchd.eDbmxn43sK/Listeners
+XPC_FLAGS 0x0
+</pre>
+
+{% codeblock lang:bash %}
+awk '{print FILENAME,$0}' Server.cs.meta 
+{% endcodeblock %}
+<pre>
+Server.cs.meta fileFormatVersion: 2
+Server.cs.meta guid: c265c6b6a7a784f3bb1417ce67e9df3e
+Server.cs.meta timeCreated: 1456236560
+Server.cs.meta licenseType: Free
+Server.cs.meta MonoImporter:
+Server.cs.meta   serializedVersion: 2
+Server.cs.meta   defaultReferences: []
+Server.cs.meta   executionOrder: 0
+Server.cs.meta   icon: {instanceID: 0}
+Server.cs.meta   userData: 
+Server.cs.meta   assetBundleName: 
+Server.cs.meta   assetBundleVariant: 
+</pre>
 
 ###正则表达式
 上面通过分隔符分列是`awk`的基本功能，`awk`还可以和[正则表达式结合][regex]相结合做出复杂的效果
