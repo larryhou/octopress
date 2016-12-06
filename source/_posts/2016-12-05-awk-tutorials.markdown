@@ -27,7 +27,7 @@ echo 'this seems like a pretty nice example' | awk -F' like ' '{print $1}'
 除了`NF`，`awk`还有一些其他内置变量，见下表
 
 |内置变量|变量描述|
-|:------|:------------:|
+|------:|:------------|
 |CONVFMT|转换数字使用的格式，默认为：%.6g|
 |FS     |分列使用的正则表达式，可以通过-Ffs来设置|
 |NF     |当前行分隔后的列数|
@@ -221,7 +221,7 @@ exit [ expression ]     # exit immediately; status is expression
 可以在表达式中使用的`awk`内置函数
 
 |函数名|函数描述|
-|:----|:----:|
+|:----|:----|
 |length|字符串长度|
 |rand|(0<=x<1)的随机数|
 |srand|设置随机种子并返回之前的随机种子|
@@ -240,7 +240,7 @@ exit [ expression ]     # exit immediately; status is expression
 以及各种运算符
 
 |运算符|描述|
-|:--|:---:|
+|--:|:---|
 |=,+=,-=,*=,/=,%=,^=,**=|赋值|
 |?:|C条件表达式|
 |\|\||逻辑或|
@@ -252,7 +252,7 @@ exit [ expression ]     # exit immediately; status is expression
 |*,/,%|乘，除与求余|
 |+,-,!|一元加，减和逻辑非|
 |^,***|求幂|
-|++,--|增加或减少，作为前缀或后缀|
+|++,\-\-|增加或减少，作为前缀或后缀|
 |$|字段引用|
 |in|数组成员|
 
