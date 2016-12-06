@@ -202,16 +202,23 @@ exit [ expression ]     # exit immediately; status is expression
 |<,<=,>,>=,!=,==|关系运算符|
 |空格|连接|
 |+,-|加，减|
-|*,/,&|乘，除与求余|
+|*,/,%|乘，除与求余|
 |+,-,!|一元加，减和逻辑非|
 |^,***|求幂|
 |++,--|增加或减少，作为前缀或后缀|
 |$|字段引用|
 |in|数组成员|
 
-
+延伸阅读：<br/>
+[Awk User's Guide:Very Simple][gnu_01]<br/>
+[Awk User's Guide:Fields][gnu_02]<br/>
+[awk用法][link_01]<br/>
 
 [regex]: https://www.gnu.org/software/gawk/manual/html_node/Regexp.html#Regexp  "正则表达式"
+[gnu_01]: https://www.gnu.org/software/gawk/manual/html_node/Very-Simple.html "Awk User's Guide:Very Simple"
+[gnu_02]: https://www.gnu.org/software/gawk/manual/html_node/Fields.html "Awk User's Guide:Fields"
+[link_01]: http://www.cnblogs.com/emanlee/p/3327576.html "awk用法"
+
 
 
 
