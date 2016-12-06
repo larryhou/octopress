@@ -196,6 +196,47 @@ exit [ expression ]     # exit immediately; status is expression
 |$|字段引用|
 |in|数组成员|
 
+###综合示例
+
+下面这个示例使用`awk`做了一个相对比较复杂的事情：把第二列相同的行归为一类，并把相同类的第一列数值相加求和，并输出汇总结果
+{% codeblock lang:bash %}
+#!/bin/bash
+
+export LC_NUMERIC="en_US.UTF-8"
+cat data.txt | awk 'BEGIN{sum=0;type="";prev=""}{
+	if(type=="" || type!=$2)
+	{
+		if(type!="")
+		{
+			printf "%10'\''.d %s %s\n", sum, prev,"#" NR
+		}
+		
+		type=$2
+		prev=sprintf("%9'\''.d %s %s",$1,$2,$3)
+		sum=0
+	}
+	
+	sum+=$1
+	
+	# if(NR>10000) exit
+}'
+{% endcodeblock %}
+
+<pre>
+   656,632        96 System.Collections.Generic.List`1<int>:.ctor(System.Collections.Generic.IEnumerable`1<int>) Int32[] #315133
+   859,648        64 System.Collections.Generic.Dictionary`2<object,object>:InitArrays(int) WeakObjectWrapper[] #347584
+   964,608       976 System.Collections.Generic.List`1<UnityEngine.UIVertex>:.ctor(int) UIVertex[] #333434
+ 1,048,592 1,048,592 FowTexture:Init() Color[] #687192
+ 1,065,568       464 System.Collections.Generic.Dictionary`2<int16,Morefun.LockStep.LList`1<System.Delegate>>:InitArrays(int) Link[] #351569
+ 1,132,052       274 System.MonoType:get_AssemblyQualifiedName() String #243980
+ 1,181,198        48 UnityEngine.Object:Internal_InstantiateSingle(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion) VisualsTowerAnim #124684
+ 1,187,060        64 System.Reflection.MonoCMethod:Invoke(object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo) WaypointFollower #239548
+ 1,790,736        98 string:Concat(string,string) String #62269
+ 2,219,368        16 HutongGames.PlayMaker.ActionData:Copy() MonoType #671794
+</pre>
+在`awk`操作里面如果要转移单引号`'`，则需要通过`'\''`来实现，上面这个示例中使用了两次单引号`'`，可以通过<a class='.blog-link' href='assets/awk-tutorials/data.txt'>链接</a>下载脚本使用的数据源文件。
+
+
 延伸阅读：<br/>
 [Awk User's Guide:Very Simple][gnu_01]<br/>
 [Awk User's Guide:Fields][gnu_02]<br/>
