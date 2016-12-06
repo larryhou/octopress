@@ -234,7 +234,7 @@ cat data.txt | awk 'BEGIN{sum=0;type="";prev=""}{
  1,790,736        98 string:Concat(string,string) String #62269
  2,219,368        16 HutongGames.PlayMaker.ActionData:Copy() MonoType #671794
 </pre>
-在`awk`操作里面如果要转移单引号`'`，则需要通过`'\''`来实现，上面这个示例中使用了两次单引号`'`，可以通过<a class='.blog-link' href='assets/awk-tutorials/data.txt'>链接</a>下载脚本使用的数据源文件。
+在`awk`操作里面如果要转移单引号`'`，则需要通过`'\''`来实现，上面这个示例中使用了两次单引号`'`，可以通过<a class='.blog-link' href='assets/awk-tutorials/data.txt.7z'>链接</a>下载脚本使用的数据源文件。
 
 
 延伸阅读：<br/>
