@@ -43,19 +43,6 @@ echo 'this seems like a pretty nice example' | awk -F' like ' '{print $1}'
 |ARGV   |argument array, assignable; non-null members are taken as file-names|
 |ENVIRON |array of environment variables; subscripts are names.|
 
-|变量名|含义|
-|:---|:---:|
-|ARGC|命令行变元个数|
-|ARGV|命令行变元数组|
-|FILENAME|当前输入文件名|
-|FNR|当前文件中的记录号|
-|FS|输入域分隔符，默认为一个空格|
-|RS|输入记录分隔符|
-|NF|当前记录里域个数|
-|NR|到目前为止记录数|
-|OFS|输出域分隔符|
-|ORS|输出记录分隔符|
-
 ###正则表达式
 上面通过分隔符分列是`awk`的基本功能，`awk`还可以和[正则表达式结合][regex]相结合做出复杂的效果
 
