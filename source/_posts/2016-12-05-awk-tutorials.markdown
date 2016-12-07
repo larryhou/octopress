@@ -223,7 +223,7 @@ exit [ expression ]     # exit immediately; status is expression
 |函数名|函数描述|
 |:----|:----|
 |length|字符串长度|
-|rand|(0<=x<1)的随机数|
+|rand|生成(0<=x<1)范围的随机数|
 |srand|设置随机种子并返回之前的随机种子|
 |int|截尾转换成整数|
 |substr(s,m,n)|返回字符串s自m位置(索引从1开始)开始的n个字符|
