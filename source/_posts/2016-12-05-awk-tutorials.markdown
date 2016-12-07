@@ -294,7 +294,7 @@ cat data.txt | awk 'BEGIN{sum=0;type="";prev=""}{
  1,790,736        98 string:Concat(string,string) String #62269
  2,219,368        16 HutongGames.PlayMaker.ActionData:Copy() MonoType #671794
 </pre>
-在`awk`操作里面如果要[转义][link_02]单引号`'`，则需要通过`'\''`来实现，上面这个示例中使用了两次单引号`'`。另外，使用了`printf`对数值进行[千分位格式化][link_03]，可以通过<a class='.blog-link' href='/assets/awk-tutorials/data.txt.7z' title='下载数据文件：data.txt'>链接</a>下载脚本使用的数据源文件。
+如果在`awk`操作里面使用单引号`'`则需要[转义][link_02]，可以通过`'\''`来实现，上面这个示例中使用了两次单引号`'`。另外，使用了`printf`对数值进行[千分位格式化][link_03]，脚本使用的数据源文件通过<a class='.blog-link' href='/assets/awk-tutorials/data.txt.7z' title='下载数据文件：data.txt'>链接</a>下载。
 
 
 延伸阅读：<br/>
