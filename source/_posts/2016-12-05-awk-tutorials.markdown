@@ -232,7 +232,7 @@ exit [ expression ]     # exit immediately; status is expression
 |split(s,a,fs)|把字符串s通过正则fs分隔成数组a，并返回数组a长度n，如果fs未设置，则使用FS分隔符|
 |sub(r,t,s)|在字符串s中，使用正则表达式r首次匹配的位置替换成t，如果s未设置，则使用$0|
 |gsub(r,t,s)|与sub(r,t,s)参数相同，不过会把匹配的字符串全部替换，并返回替换的次数|
-|sprintf(fmt,expr,...)|依据printf相同的样式fmt格式表达式列表|
+|sprintf(fmt,expr,...)|使用与printf相同的样式fmt格式表达式列表|
 |system(cmd)|执行cmd并返回退出状态码|
 |tolower(str)|把字符串str转换成小写|
 |toupper(str)|把字符串str转换成大写|
